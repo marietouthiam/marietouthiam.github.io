@@ -13,14 +13,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 header{
 width: 100%;
 height: 100vh;
-background-color: rgb(7, 1, 7);
 padding: 10px 20px;
 background-image: url("./images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
 background-size: cover;
-
 }
 
  nav {
@@ -49,7 +51,7 @@ main{
 width: 100%;
 height: 88%;
 display: flex;
-justify-content: center;
+padding-left: 50px;
 align-items: center;
 
 }
@@ -57,7 +59,7 @@ align-items: center;
 .header-title {
     width: 40%;
     height: 50%;
-    color: #4a4747c8;
+    color: rgb(132, 129, 129);
     
 }
 
@@ -67,6 +69,7 @@ align-items: center;
     
 }
 .header-title p{
+    margin: 20px;
     font-family: "bethany";
     
 }
@@ -77,12 +80,23 @@ align-items: center;
     height: 100px;
     border-radius: 100%;
 }
-
+ .title-text{
+    color: rgb(100, 99, 99);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-style:oblique;
+ }
+ 
+ h1 {
+    color:rgb(100, 99, 99) ;
+ }
+ 
 
      .competence {
         width: 100%;
         height: 100vh;
-        background-color: rgb(70, 70, 70);
+        background-color: rgb(155, 153, 153);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -95,7 +109,7 @@ align-items: center;
      .enfant {
         width: 30%;
         height: 70%;
-        background-color: rgb(70, 70, 70);
+        background-color: rgb(66, 66, 66);
         border: solid;
         display: flex;
         justify-content:space-around;
@@ -117,7 +131,7 @@ align-items: center;
     .projets {
         width: 100%;
         height: 100vh;
-        background-color: rgb(70, 70, 70);
+        background-color: rgb(155, 153, 153);
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -144,16 +158,15 @@ align-items: center;
   
     }
 
-    .contact {
+    .Formulaire {
         padding: 15px;
         width: 100%;
         height: 100%;
-        background-color: rgb(70, 70, 70);
+        background-color:whitesmoke;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
   
 
@@ -165,7 +178,14 @@ align-items: center;
     border: solid;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     
+
+
+    
+  }
+  #Formulaire1 img {
+    width: 90px;
   }
 
   #Formulaire2 {
@@ -174,9 +194,114 @@ align-items: center;
     background-color:rgb(70, 70, 70);
     display: flex;
     border: solid;
-    justify-content: space-between;
     align-items: center;
-    
+    flex-direction: column;
   }
+  .row {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .styled-input {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .styled-input input {
+background-color: bisque;
+  }
+
+  h2 {
+    margin:10px;
+    font-family:Poppins,sans-serif,arial ;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+
+  }
+  
+
+
+  body {
+    background: #000;
+}
+
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
  
  
