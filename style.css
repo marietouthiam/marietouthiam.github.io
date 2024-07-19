@@ -1,0 +1,182 @@
+@font-face{
+    font-family: heartfield;
+    src: url(./heartfield/Heartfield.otf);
+    }
+
+    @font-face{
+        font-family: bethany;
+        src: url(./bethany_elingston/Bethany\ Elingston.otf);
+        }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+width: 100%;
+height: 100vh;
+background-color: rgb(7, 1, 7);
+padding: 10px 20px;
+background-image: url("./images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
+background-size: cover;
+
+}
+
+ nav {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   font-family: "bethany";
+   color: #4a4747c8;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/logo.png);
+    background-size: cover;
+}
+
+ menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+main{
+width: 100%;
+height: 88%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.header-title {
+    width: 40%;
+    height: 50%;
+    color: #4a4747c8;
+    
+}
+
+.header-title h1{
+    font-family: "Heartfield";
+    font-size: 50px;
+    
+}
+.header-title p{
+    font-family: "bethany";
+    
+}
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+
+     .competence {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(70, 70, 70);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .competence h1{
+        width: 100%;
+        text-align: center;
+      }
+     .enfant {
+        width: 30%;
+        height: 70%;
+        background-color: rgb(70, 70, 70);
+        border: solid;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    #dev {
+        
+    }
+
+    #back {
+    }
+
+    #dsg {
+    
+    }
+
+    
+    .projets {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(70, 70, 70);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+.projets h1{
+    width: 100%;
+        text-align: center;
+        padding: 5%;
+}
+
+
+
+
+    #Projet1 {
+      
+    }
+
+    #Projet2 {
+  
+    }
+
+ #Projet3 {
+  
+    }
+
+    .contact {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(70, 70, 70);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+  
+
+  #Formulaire1 {
+    width: 40%;
+    height: 70%;
+    background-color:rgb(70, 70, 70);
+    display: flex;
+    border: solid;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  #Formulaire2 {
+    width: 40%;
+    height: 60%;
+    background-color:rgb(70, 70, 70);
+    display: flex;
+    border: solid;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+ 
+ 
